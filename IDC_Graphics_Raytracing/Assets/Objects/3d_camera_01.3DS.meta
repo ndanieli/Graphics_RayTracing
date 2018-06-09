@@ -1,0 +1,276 @@
+fileFormatVersion: 2
+guid: c9fd7a79405589d4087caa5dc2f1fa05
+timeCreated: 1528444467
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: ChamferBo0
+    100004: ChamferBo1
+    100006: ChamferBox
+    100008: ChamferCyl
+    100010: Cylinder01
+    100012: Cylinder02
+    100014: Cylinder03
+    100016: Line01
+    100018: Line02
+    100020: Line07
+    100022: Line09
+    100024: Line11
+    100026: Line12
+    100028: Line13
+    100030: Line14
+    100032: OilTank01
+    100034: Rectangle0
+    100036: Rectangle1
+    100038: Rectangle2
+    100040: Rectangle3
+    100042: Rectangle4
+    100044: Rectangle5
+    100046: Rectangle6
+    100048: Rectangle7
+    100050: Shape01
+    100052: Shape02
+    100054: Shape03
+    100056: Shape04
+    100058: Sphere01
+    100060: Text01
+    100062: Text02
+    100064: Text03
+    100066: Text04
+    100068: Text07
+    400000: //RootNode
+    400002: ChamferBo0
+    400004: ChamferBo1
+    400006: ChamferBox
+    400008: ChamferCyl
+    400010: Cylinder01
+    400012: Cylinder02
+    400014: Cylinder03
+    400016: Line01
+    400018: Line02
+    400020: Line07
+    400022: Line09
+    400024: Line11
+    400026: Line12
+    400028: Line13
+    400030: Line14
+    400032: OilTank01
+    400034: Rectangle0
+    400036: Rectangle1
+    400038: Rectangle2
+    400040: Rectangle3
+    400042: Rectangle4
+    400044: Rectangle5
+    400046: Rectangle6
+    400048: Rectangle7
+    400050: Shape01
+    400052: Shape02
+    400054: Shape03
+    400056: Shape04
+    400058: Sphere01
+    400060: Text01
+    400062: Text02
+    400064: Text03
+    400066: Text04
+    400068: Text07
+    2100000: 14 - Default
+    2100002: 15 - Default
+    2100004: 2 - Default
+    2100006: brushed
+    2100008: 3 - Default
+    2100010: brushed1
+    2100012: 15 - Default08
+    2100014: 17 - Default
+    2100016: 16 - Default
+    2100018: 22 - Default
+    2100020: 10 - Default
+    2100022: 13 - Default
+    2100024: 7 - Default
+    2100026: 19 - Default
+    2100028: 18 - Default
+    2100030: 21 - Default
+    2100032: 'Material #65'
+    2300000: ChamferBo0
+    2300002: ChamferBo1
+    2300004: ChamferBox
+    2300006: ChamferCyl
+    2300008: Cylinder01
+    2300010: Cylinder02
+    2300012: Cylinder03
+    2300014: Line01
+    2300016: Line02
+    2300018: Line07
+    2300020: Line09
+    2300022: Line11
+    2300024: Line12
+    2300026: Line13
+    2300028: Line14
+    2300030: OilTank01
+    2300032: Rectangle0
+    2300034: Rectangle1
+    2300036: Rectangle2
+    2300038: Rectangle3
+    2300040: Rectangle4
+    2300042: Rectangle5
+    2300044: Rectangle6
+    2300046: Rectangle7
+    2300048: Shape01
+    2300050: Shape02
+    2300052: Shape03
+    2300054: Shape04
+    2300056: Sphere01
+    2300058: Text01
+    2300060: Text02
+    2300062: Text03
+    2300064: Text04
+    2300066: Text07
+    3300000: ChamferBo0
+    3300002: ChamferBo1
+    3300004: ChamferBox
+    3300006: ChamferCyl
+    3300008: Cylinder01
+    3300010: Cylinder02
+    3300012: Cylinder03
+    3300014: Line01
+    3300016: Line02
+    3300018: Line07
+    3300020: Line09
+    3300022: Line11
+    3300024: Line12
+    3300026: Line13
+    3300028: Line14
+    3300030: OilTank01
+    3300032: Rectangle0
+    3300034: Rectangle1
+    3300036: Rectangle2
+    3300038: Rectangle3
+    3300040: Rectangle4
+    3300042: Rectangle5
+    3300044: Rectangle6
+    3300046: Rectangle7
+    3300048: Shape01
+    3300050: Shape02
+    3300052: Shape03
+    3300054: Shape04
+    3300056: Sphere01
+    3300058: Text01
+    3300060: Text02
+    3300062: Text03
+    3300064: Text04
+    3300066: Text07
+    4300000: Line01
+    4300002: Line02
+    4300004: Rectangle0
+    4300006: Line13
+    4300008: Rectangle1
+    4300010: Rectangle2
+    4300012: Rectangle3
+    4300014: Rectangle4
+    4300016: Rectangle5
+    4300018: Shape01
+    4300020: Shape02
+    4300022: Cylinder01
+    4300024: Cylinder02
+    4300026: Cylinder03
+    4300028: Shape03
+    4300030: Line09
+    4300032: Rectangle6
+    4300034: ChamferBox
+    4300036: OilTank01
+    4300038: ChamferBo0
+    4300040: Line12
+    4300042: Line11
+    4300044: Text04
+    4300046: Line14
+    4300048: Shape04
+    4300050: ChamferBo1
+    4300052: Text01
+    4300054: Text02
+    4300056: ChamferCyl
+    4300058: Text07
+    4300060: Text03
+    4300062: Sphere01
+    4300064: Line07
+    4300066: Rectangle7
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
