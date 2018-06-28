@@ -267,6 +267,7 @@
     <Compile Include="Assets\PrimitivePlus\Scripts\PrimitivePlusType.cs" />
     <Compile Include="Assets\Scripts\ButtonColorIndexClass.cs" />
     <Compile Include="Assets\Scripts\ButtonColorManagerScript.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
     <Compile Include="Assets\Scripts\LineRendererCreator.cs" />
     <Compile Include="Assets\Scripts\RTManagerScript.cs" />
     <Compile Include="Assets\Scripts\ShootFromOrigin.cs" />

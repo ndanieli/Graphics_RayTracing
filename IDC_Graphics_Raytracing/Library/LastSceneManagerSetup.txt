@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/IDC_Graphics_Raytracing.unity
+  isLoaded: 1
+  isActive: 1
