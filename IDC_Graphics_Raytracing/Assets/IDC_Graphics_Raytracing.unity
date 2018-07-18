@@ -640,7 +640,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &59187416
 Transform:
   m_ObjectHideFlags: 0
@@ -5477,7 +5477,7 @@ MonoBehaviour:
   lights:
   - {fileID: 965486233}
   - {fileID: 1266406602}
-  - {fileID: 849620691}
+  lightsMaterial: {fileID: 2100000, guid: 9f50f87efcbc6ba40a34e903901243af, type: 2}
 --- !u!1 &814747805
 GameObject:
   m_ObjectHideFlags: 0
@@ -6795,7 +6795,7 @@ GameObject:
   - component: {fileID: 965486235}
   m_Layer: 0
   m_Name: Light1
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6807,7 +6807,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 965486233}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -14.88, y: 10.7, z: 0}
+  m_LocalPosition: {x: -22.3, y: 13.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 59187416}
@@ -9189,7 +9189,7 @@ GameObject:
   - component: {fileID: 1266406604}
   m_Layer: 0
   m_Name: Light2
-  m_TagString: Untagged
+  m_TagString: Light
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9201,7 +9201,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1266406602}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 10.2, y: -6.86, z: 30.3}
+  m_LocalPosition: {x: 32.8, y: -6.86, z: 27.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 59187416}

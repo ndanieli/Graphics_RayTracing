@@ -17,7 +17,7 @@ public class RTManagerScript : MonoBehaviour {
 
         destroyNewGameObject();
         origin.ResetLR();
-        origin.TraceRay(ray);
+        origin.TraceRay(ray, true);
     }
 
     private void destroyNewGameObject()

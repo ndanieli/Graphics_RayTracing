@@ -20,7 +20,7 @@ public class ShootFromOrigin : MonoBehaviour {
         StartCoroutine(setAlr());
     }
 
-    public void TraceRay(Ray ray)
+    public void TraceRay(Ray ray, bool isOrigin)
     {
         RaycastHit hit;
         if (Physics.Raycast(ray, out hit))
@@ -30,7 +30,10 @@ public class ShootFromOrigin : MonoBehaviour {
             Color endColor = hit.transform.gameObject.GetComponent<Renderer>().material.color;
 
             StartCoroutine(waitAndShootAtPoint(hitPosition, endColor));
-            createNewGameObject(hit, hitGO);
+            if (!hitGO.tag.Equals("Light"))
+            {
+                createNewGameObject(hit, hitGO, isOrigin);
+            }
         }
         else
         {
@@ -39,7 +42,7 @@ public class ShootFromOrigin : MonoBehaviour {
         }
     }
 
-    private static void createNewGameObject(RaycastHit hit, GameObject hitGO)
+    private static void createNewGameObject(RaycastHit hit, GameObject hitGO, bool isOrigin)
     {
         GameObject go = new GameObject();
 
@@ -56,12 +59,12 @@ public class ShootFromOrigin : MonoBehaviour {
         newRay.direction = hit.normal;
 
         ShootFromOrigin goShoot = go.AddComponent<ShootFromOrigin>();
-        goShoot.shootFromNewPoint(newRay);
+        goShoot.shootFromNewPoint(newRay, isOrigin);
     }
 
-    public void shootFromNewPoint(Ray newRay)
+    public void shootFromNewPoint(Ray newRay, bool isOrigin)
     {
-        StartCoroutine(sendRaysFromNewHitPoint(newRay));
+        StartCoroutine(sendRaysFromNewHitPoint(newRay, isOrigin));
     }
 
     public void ResetLR()
@@ -69,19 +72,23 @@ public class ShootFromOrigin : MonoBehaviour {
         alr.Reset();
     }
 
-    IEnumerator sendRaysFromNewHitPoint(Ray newRay)
+    IEnumerator sendRaysFromNewHitPoint(Ray newRay, bool isOrigin)
     {
         yield return new WaitForSeconds(0.5f);
-        //shootLights();
-        TraceRay(newRay);
+        TraceRay(newRay, false);
+
+        if (isOrigin)
+        {
+            yield return new WaitForSeconds(1.5f);
+            shootLights();
+        }
     }
 
     private void shootLights()
     {
-        foreach (GameObject go in lm.lights)
+        foreach (GameObject light in lm.lights)
         {
-            Vector3 pos = go.transform.position;
-            StartCoroutine(waitAndShootAtLight(pos));
+            StartCoroutine(waitAndShootAtLight(light));
         }
 
     }
@@ -105,13 +112,46 @@ public class ShootFromOrigin : MonoBehaviour {
         alr.Enqueue(pos);
     }
 
-    IEnumerator waitAndShootAtLight(Vector3 pos)
+    IEnumerator waitAndShootAtLight(GameObject lightGO)
     {
-        yield return new WaitForSeconds(0.1f);
-        alr.StartColor = Color.white;
-        alr.EndColor = Color.white;
-        alr.Enqueue(transform.position);
-        alr.Enqueue(pos);
+        yield return new WaitForSeconds(0.5f);
+
+        GameObject go = new GameObject();
+        go.name = "lightGO";
+        go.tag = "new";
+        go.transform.position = gameObject.transform.position;
+        go.transform.rotation = gameObject.transform.rotation;
+        LineRenderer lightLr = go.gameObject.AddComponent<LineRenderer>();
+        AnimatedLineRenderer lightAlr = go.gameObject.AddComponent<AnimatedLineRenderer>();
+        lightAlr.setLineRenderer(lightLr);
+        lightAlr.LineRenderer.material = new Material(Shader.Find("Particles/Standard Unlit"));
+
+        lightAlr.StartWidth = alr.StartWidth;
+        lightAlr.EndWidth = alr.EndWidth;
+        lightAlr.SecondsPerLine = alr.SecondsPerLine;
+                
+       
+
+        Ray ray = new Ray();
+        ray.origin = go.transform.position;
+        ray.direction = lightGO.transform.position - go.transform.position;
+        ray.direction = ray.direction.normalized;
+
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit))
+        {
+            Color color = Color.gray;
+            if (hit.transform.gameObject.tag.Equals("Light"))
+            {
+                color = hit.transform.gameObject.GetComponent<Renderer>().material.color;
+                
+            }
+            lightAlr.StartColor = color;
+            lightAlr.EndColor = color;
+
+            lightAlr.Enqueue(go.transform.position);
+            lightAlr.Enqueue(hit.transform.position);
+        }
     }
 
 

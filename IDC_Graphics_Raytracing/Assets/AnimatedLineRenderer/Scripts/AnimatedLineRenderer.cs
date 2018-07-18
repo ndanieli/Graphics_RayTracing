@@ -98,6 +98,11 @@ namespace DigitalRuby.AnimatedLineRenderer
             lineRenderer.positionCount = 0;
         }
 
+        public void setLineRenderer(LineRenderer lr)
+        {
+            lineRenderer = lr;
+        }
+
         private void Update()
         {
             ProcessCurrent();
